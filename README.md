@@ -1,2 +1,1 @@
-# AnimVideojuego
- 
+# AnimationRig
