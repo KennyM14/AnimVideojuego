@@ -10,6 +10,7 @@ public class HandIKRest : MonoBehaviour
     [SerializeField] private LayerMask detectionLayers;
     [SerializeField] private AvatarIKGoal handGoal;
     [SerializeField] private FloatDamperclass animationTransition;
+    private RaycastHit hit;
 
     private Animator anim;
 
@@ -51,12 +52,24 @@ public class HandIKRest : MonoBehaviour
 
         Vector3 rayDir = nearestSurfacePoint - detectionReference.position;
         Ray r = new Ray(detectionReference.position, nearestSurfacePoint);
-        RaycastHit hit; 
+        
         bool hasSurface = Physics.Raycast(r, out hit, rayDir.magnitude * 1.05f, detectionLayers);
         animationTransition.TargetValue = hasSurface ? 1 : 0;
         anim.SetIKPositionWeight(handGoal, animationTransition.CurrentValue); 
         anim.SetIKPosition(handGoal, hit.point);
 
+        Vector3 rotationAxis = Vector3.Cross(transform.up, hit.normal); 
+        float rotationAngle = Vector3.Angle(transform.up, hit.normal);
+        Quaternion rotation = Quaternion.AngleAxis(rotationAngle, rotationAxis);
+
+        anim.SetIKRotationWeight(handGoal, animationTransition.CurrentValue);
+        anim.SetIKRotation(handGoal, rotation); 
+
+    }
+
+    private void LateUpdate()
+    {
+        hand.forward = -hit.normal;
     }
 
 
@@ -69,6 +82,7 @@ public class HandIKRest : MonoBehaviour
             return;
         }
         Gizmos.DrawWireSphere(detectionReference.position, detectionRadius);
+        Gizmos.DrawLine(hit.point, hit.point + hit.normal * 0.1f ); 
     }
 
 #endif
