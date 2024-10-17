@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028456, g: 0.22571519, b: 0.3069234, a: 1}
+  m_IndirectSpecularColor: {r: 0.1802839, g: 0.22571442, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -67,9 +67,6 @@ LightmapSettings:
     m_LightmapParameters: {fileID: 0}
     m_LightmapsBakeMode: 1
     m_TextureCompression: 1
-    m_FinalGather: 0
-    m_FinalGatherFiltering: 1
-    m_FinalGatherRayCount: 256
     m_ReflectionCompression: 2
     m_MixedBakeMode: 2
     m_BakeBackend: 1
@@ -586,7 +583,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!81 &1157994001
 AudioListener:
   m_ObjectHideFlags: 0
@@ -1026,10 +1023,7 @@ GameObject:
   - component: {fileID: 1469367189}
   - component: {fileID: 1469367193}
   m_Layer: 0
-  m_Name: "T\u0335\u0344\u0343\u030F\u0312\u0321\u033A\u0356\u035C\u0321\u031F\u0323\u032D\u0353\u033A\u031D\u0325h\u0337\u031A\u0310\u0302\u034A\u0357\u0313\u0314\u030A\u034C\u0340\u0302\u034C\u0307\u034A\u0326\u0328\u031C\u031E\u0324\u0348\u0328\u0328\u0329\u032D\u0326\u0318\u0355\u032E\u033Ce\u0337\u0307\u0310\u032E\u032E\u033C\u035A\u0324\u0359\u035A\u032E\u0345\u0355\u0345\u032C\u0359\u031F
-    \u0338\u030F\u030C\u030C\u0315\u035D\u0305\u034C\u0340\u0300\u0315\u0344\u0341\u0348\u0355\u0354\u034D\u032F\u0327\u032AC\u0334\u031A\u035B\u0308\u032A\u0349\u0355\u031F\u032A\u0321u\u0338\u0303\u0352\u034B\u0344\u0313\u0352\u030D\u0307\u0344\u0321\u032B\u031D\u032C\u033C\u0353\u0345\u0317\u0326\u035Ab\u0337\u0315\u0340\u031B\u0301\u033F\u0344\u0303\u0352\u0313\u0344\u0304\u0343\u030C\u0344\u0326\u034D\u032F\u031E\u0332\u033C\u031Ee\u0337\u035D\u0357\u033D\u0301\u030A\u0313\u0358\u0314\u0300\u0311\u0351\u0351\u0309\u0305\u0320\u0321\u035C\u033A\u0331\u0353
-    \u0336\u031B\u030B\u031F\u0359\u0331\u034E\u0356\u032A\u0321\u032F\u0316\u0348\u032F\u033A\u032Co\u0338\u0302\u0314\u033F\u0302\u0351\u034C\u033F\u030F\u034B\u0351\u034A\u035A\u0322\u032Af\u0334\u0301\u030B\u031A\u0303\u033E\u033B\u032F\u0349\u035C\u035A\u0319\u0328
-    \u0338\u0307\u0308\u035D\u0302\u0310\u035D\u0359\u0331\u033A\u035C\u034D\u033A\u0331P\u0337\u035D\u030B\u034A\u031A\u0307\u0304\u031A\u0350\u033E\u030D\u0312\u034A\u0320\u031C\u0331\u033C\u032B\u0359\u0355\u034D\u033A\u0332\u034D\u0327\u0339\u0347\u035Aa\u0334\u0344\u0343\u0344\u0310\u0310\u0315\u030D\u034A\u0304\u0358\u035B\u030E\u0309\u0306\u0342\u031C\u0353\u032B\u0318\u0316\u0327\u0324\u033C\u0320\u0327\u0320\u0359\u035Ai\u0335\u0358\u0308\u0306\u0308\u0354\u035A\u0356\u0345\u0333\u033A\u0325\u034E\u0326\u033C\u033A\u0324n\u0338\u030D\u0305\u0344\u035D\u034C\u030B\u0312\u0314\u0344\u0300\u0311\u0341\u031B\u032F\u0324\u0348\u0345\u0324\u031C"
+  m_Name: Cubo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1616,7 +1610,7 @@ PrefabInstance:
     - target: {fileID: 8906709313378364248, guid: a38c6194998e36d46a8225338379e9b5,
         type: 3}
       propertyPath: m_ActionEvents.Array.data[5].m_ActionName
-      value: Combat/Look[/Mouse/delta]
+      value: 'Combat/Look[/Mouse/delta]'
       objectReference: {fileID: 0}
     - target: {fileID: 8906709313378364248, guid: a38c6194998e36d46a8225338379e9b5,
         type: 3}
